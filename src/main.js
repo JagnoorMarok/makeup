@@ -1,5 +1,5 @@
 /**
- * ZERRA LUXURY BEAUTY & COSMETICS
+ * SHOBHA CHAWLA LUXURY BEAUTY & COSMETICS
  * Main Application Logic & Interactive Systems
  */
 
@@ -578,11 +578,11 @@ function initNewsletter() {
     }
 
     if (feedback) {
-      feedback.textContent = 'Welcome to the Zerra inner circle. Check your inbox!';
+      feedback.textContent = 'Welcome to the Shobha Chawla inner circle. Check your inbox!';
       feedback.className = 'form-feedback success';
     }
 
-    showToast('💌 Subscribed successfully! Welcome to Zerra Beauty Studio.');
+    showToast('💌 Subscribed successfully! Welcome to Shobha Chawla Beauty Studio.');
     form.reset();
 
     setTimeout(() => {

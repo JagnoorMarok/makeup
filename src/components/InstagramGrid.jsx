@@ -10,7 +10,7 @@ const galleryCards = [
   {
     id: 2,
     img: '/images/gallery_2.webp',
-    alt: 'Zerra luxury red lipstick on silk',
+    alt: 'Shobha Chawla luxury red lipstick on silk',
     shape: 'arch-down',
   },
   {

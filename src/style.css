@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ZERRA LUXURY BEAUTY & COSMETICS — REACT STYLESHEET
+   SHOBHA CHAWLA LUXURY BEAUTY & COSMETICS — REACT STYLESHEET
    Matching Framer Template & Screenshot with Pixel-Precision
    ========================================================================== */
 
@@ -103,6 +103,7 @@ body {
 }
 
 /* App Container */
+.brand-app,
 .zerra-app {
   min-height: 100vh;
   position: relative;
@@ -150,6 +151,7 @@ body {
 /* ==========================================================================
    HEADER — MATCHING SCREENSHOT EXACTLY
    ========================================================================== */
+.brand-header,
 .zerra-header {
   position: sticky;
   top: 0;
@@ -159,6 +161,7 @@ body {
   padding: 18px 0;
 }
 
+.brand-header.scrolled,
 .zerra-header.scrolled {
   background: rgba(250, 243, 232, 0.95);
   backdrop-filter: blur(16px);
@@ -177,6 +180,7 @@ body {
 }
 
 /* Logo */
+.brand-logo,
 .zerra-logo {
   display: inline-flex;
   align-items: center;
@@ -187,14 +191,16 @@ body {
 
 .logo-text {
   font-family: var(--font-serif);
-  font-size: 2.15rem;
+  font-size: 1.85rem;
   font-weight: 400;
   color: var(--palette-espresso);
   letter-spacing: -0.01em;
   line-height: 1;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
+.brand-logo:hover .logo-text,
 .zerra-logo:hover .logo-text {
   color: var(--palette-wine);
 }
@@ -208,6 +214,7 @@ body {
   transition: transform var(--transition-normal), filter var(--transition-normal);
 }
 
+.brand-logo:hover .logo-flower,
 .zerra-logo:hover .logo-flower {
   transform: rotate(25deg) scale(1.08);
   filter: drop-shadow(0 2px 10px rgba(246, 222, 38, 0.65));
@@ -434,7 +441,10 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
+  transform: scale(1.18);
+  transform-origin: center 28%;
   display: block;
+  transition: transform 0.5s ease-out;
 }
 
 .hero-vignette-overlay {
@@ -1743,6 +1753,7 @@ body {
 /* ==========================================================================
    FOOTER SECTION (MATCHING SCREENSHOT 2 WITH WINE & YELLOW EMPHASIS)
    ========================================================================== */
+.brand-footer-section,
 .zerra-footer-section {
   background: var(--palette-wine);
   color: #FFFFFF;
@@ -2330,6 +2341,10 @@ body {
 
   .mobile-menu-btn {
     display: flex;
+  }
+
+  .logo-text {
+    font-size: 1.45rem;
   }
 
   .header-container {

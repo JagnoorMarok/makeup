@@ -15,12 +15,12 @@ export default function Footer({ onOpenConsultModal, onShowToast }) {
     if (onOpenConsultModal) {
       onOpenConsultModal();
     } else if (onShowToast) {
-      onShowToast('✨ Step into your glow with Zerra Studio.');
+      onShowToast('✨ Step into your glow with Shobha Chawla Studio.');
     }
   };
 
   return (
-    <footer className="zerra-footer-section" id="footer">
+    <footer className="brand-footer-section" id="footer">
       <div className="footer-crimson-wrap">
         {/* Top Header: Editorial Invitation & Phone numbers */}
         <div className="footer-header-container">
@@ -30,7 +30,7 @@ export default function Footer({ onOpenConsultModal, onShowToast }) {
               <span className="heading-line">Unmatched Expertise And Care!</span>
             </h2>
             <p className="footer-journey-subtext">
-              Discover Zerra difference today and let us help you shine brighter than ever. Visit us to embrace beauty, confidence, and elegance!
+              Discover the Shobha Chawla difference today and let us help you shine brighter than ever. Visit us to embrace beauty, confidence, and elegance!
             </p>
           </div>
 

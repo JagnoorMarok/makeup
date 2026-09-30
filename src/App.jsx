@@ -31,7 +31,7 @@ export default function App() {
   };
 
   return (
-    <div className="zerra-app">
+    <div className="brand-app">
       {/* Background ambient light */}
       <div className="ambient-glow glow-1" aria-hidden="true" />
       <div className="ambient-glow glow-2" aria-hidden="true" />

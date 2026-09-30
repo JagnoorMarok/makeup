@@ -26,7 +26,7 @@ export default function Hero({ onOpenConsultModal }) {
         <div className="hero-bg-container">
           <img 
             src="/images/hero_woman_custom.jpg" 
-            alt="Zerra Luxury Beauty Radiance" 
+            alt="Shobha Chawla Luxury Beauty Radiance" 
             className="hero-backdrop-img"
             loading="eager"
             fetchPriority="high"
@@ -37,14 +37,14 @@ export default function Hero({ onOpenConsultModal }) {
         {/* Dynamic Horizontal Slicing Marquee Ribbon */}
         <div className="hero-marquee-wrapper" aria-hidden="true">
           <div className="hero-marquee-track">
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
-            <span className="marquee-text">• Zerra Glow</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
+            <span className="marquee-text">• Shobha Chawla</span>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Hero({ onOpenConsultModal }) {
         <div className="hero-bottom-grid">
           {/* Bottom-Left Statement */}
           <div className="hero-statement-col">
-            <h6 className="hero-welcome-tag">WELCOME TO ZERRA:</h6>
+            <h6 className="hero-welcome-tag">WELCOME TO SHOBHA CHAWLA:</h6>
             <p className="hero-welcome-body">
               We are more than just a salon, we are a haven for those who seek to embrace their individuality and radiate confidence.
             </p>

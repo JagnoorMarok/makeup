@@ -124,7 +124,7 @@ export default function About() {
         {/* Text Column (Subtitle + 5-Line Editorial Statement in Red) */}
         <div className="about-text-content">
           <p className="about-kicker-red">
-            Welcome to Zerra, where beauty transcends boundaries<br />
+            Welcome to Shobha Chawla, where beauty transcends boundaries<br />
             and confidence becomes your signature.
           </p>
 

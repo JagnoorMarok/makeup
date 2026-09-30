@@ -25,7 +25,7 @@ export default function ConsultModal({ isOpen, initialServiceId, onClose, onConf
         
         <div className="modal-header">
           <span className="modal-kicker">Personalized Beauty Consultation</span>
-          <h3 className="modal-title">Consult & Shine with Zerra</h3>
+          <h3 className="modal-title">Consult & Shine with Shobha Chawla</h3>
           <p className="modal-desc">
             Select your desired luxury ritual, choose your preferred master stylist, and pick an appointment window.
           </p>

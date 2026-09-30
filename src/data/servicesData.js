@@ -139,37 +139,37 @@ export const servicesData = [
 
 export const testimonialsData = [
   {
-    quote: "I had an amazing experience at Zerra. The staff is so friendly, and my hair looks gorgeous! I’ll definitely be back.",
+    quote: "I had an amazing experience at Shobha Chawla. The staff is so friendly, and my hair looks gorgeous! I’ll definitely be back.",
     name: "Olivia Brown",
     title: "Client",
     service: "Hair Treatments"
   },
   {
-    quote: "Zerra is the best salon I’ve ever visited. The attention to detail was impeccable, and I left feeling fabulous! Highly recommended.",
+    quote: "Shobha Chawla is the best salon I’ve ever visited. The attention to detail was impeccable, and I left feeling fabulous! Highly recommended.",
     name: "Emma Johnson",
     title: "Client",
     service: "Design Manicure"
   },
   {
-    quote: "I’m in love with my new look! The stylist at Zerra really listened to what I wanted, and the results are incredible.",
+    quote: "I’m in love with my new look! The stylist at Shobha Chawla really listened to what I wanted, and the results are incredible.",
     name: "Sarah Smith",
     title: "Client",
     service: "Brow Shaping"
   },
   {
-    quote: "Such a relaxing experience! The team at Zerra made me feel so comfortable, and I walked out with perfect nails. I’ll be back!",
+    quote: "Such a relaxing experience! The team at Shobha Chawla made me feel so comfortable, and I walked out with perfect nails. I’ll be back!",
     name: "Lily Davis",
     title: "Client",
     service: "Treatments & Spa"
   },
   {
-    quote: "I had a wonderful time at Zerra. The staff was amazing, and my skin has never felt so refreshed after my facial!",
+    quote: "I had a wonderful time at Shobha Chawla. The staff was amazing, and my skin has never felt so refreshed after my facial!",
     name: "Jessica Clark",
     title: "Client",
     service: "Hydra Facial"
   },
   {
-    quote: "From the moment I walked in, Zerra made me feel like a VIP. The service is fantastic, and my hair color is just perfect.",
+    quote: "From the moment I walked in, Shobha Chawla made me feel like a VIP. The service is fantastic, and my hair color is just perfect.",
     name: "Grace Thompson",
     title: "Client",
     service: "Bright Makeup"

@@ -5,7 +5,7 @@ export default function CtaBanner({ onOpenConsultModal }) {
     <section className="cta-banner-section" id="booking">
       <div className="cta-banner-card container">
         <div className="cta-backdrop-img">
-          <img src="/images/cta_cosmetics.jpg" alt="Zerra Luxury Sanctuary" loading="lazy" />
+          <img src="/images/cta_cosmetics.jpg" alt="Shobha Chawla Luxury Sanctuary" loading="lazy" />
         </div>
         <div className="cta-overlay-content">
           <div className="cta-tag-wrap">
@@ -17,7 +17,7 @@ export default function CtaBanner({ onOpenConsultModal }) {
           </h2>
 
           <p className="cta-banner-desc">
-            Discover the Zerra difference today and let us help you shine brighter than ever. Visit us to embrace beauty, confidence, and elegance!
+            Discover the Shobha Chawla difference today and let us help you shine brighter than ever. Visit us to embrace beauty, confidence, and elegance!
           </p>
 
           <div className="cta-buttons-row">

@@ -9,7 +9,7 @@ export default function Quote() {
         <div className="quote-tilted-card card-top-right">
           <img 
             src="/images/quote_cosmetics.webp" 
-            alt="Zerra Luxury Lipsticks" 
+            alt="Shobha Chawla Luxury Lipsticks" 
             loading="lazy" 
           />
         </div>
@@ -29,7 +29,7 @@ export default function Quote() {
           <div className="quote-emblem-wrap">
             <img 
               src="/images/flower.svg" 
-              alt="Zerra Emblem" 
+              alt="Shobha Chawla Emblem" 
               className="quote-emblem-icon" 
             />
           </div>
@@ -43,9 +43,9 @@ export default function Quote() {
 
           {/* Author Attribution */}
           <div className="quote-attribution-row">
-            <span className="author-name-text">Sophia Laurent</span>
+            <span className="author-name-text">Shobha Chawla</span>
             <span className="author-bullet-separator">•</span>
-            <span className="author-title-text">Zerra Founder</span>
+            <span className="author-title-text">Founder</span>
           </div>
         </div>
 

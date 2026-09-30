@@ -47,7 +47,7 @@ export default function Testimonials() {
       <div className="container">
         <div className="feedback-header">
           <div>
-            <span className="section-tag">Zerra Favorites</span>
+            <span className="section-tag">Shobha Chawla Favorites</span>
             <h2 className="section-title">
               Stories from Our Beautiful Clients: <span className="serif-accent">Beauty Routine</span>
             </h2>

@@ -24,11 +24,11 @@ export default function Header({ onOpenConsultModal }) {
 
   return (
     <>
-      <header className={`zerra-header ${scrolled ? 'scrolled' : ''}`}>
+      <header className={`brand-header ${scrolled ? 'scrolled' : ''}`}>
         <div className="header-container">
           {/* Logo with Flower Emblem */}
-          <a href="#" className="zerra-logo" onClick={(e) => handleNavClick(e, '#hero')}>
-            <span className="logo-text">Zerra</span>
+          <a href="#" className="brand-logo" onClick={(e) => handleNavClick(e, '#hero')}>
+            <span className="logo-text">Shobha Chawla</span>
             <svg className="logo-flower" width="22" height="22" viewBox="0 0 24 24" fill="none">
               <path d="M12 3C12 3 15 8 15 13C15 17 12 20 12 20C12 20 9 17 9 13C9 8 12 3 12 3Z" stroke="#F1BA0A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M12 11C14.5 7 19.5 7.5 21 11C22 13.5 20.5 17 16 18.5C14 19 12 20 12 20" stroke="#F1BA0A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
@@ -79,7 +79,7 @@ export default function Header({ onOpenConsultModal }) {
           <div className="mobile-drawer-backdrop" onClick={() => setMobileMenuOpen(false)}></div>
           <div className="mobile-drawer-body">
             <div className="mobile-drawer-top">
-              <span className="logo-text">Zerra</span>
+              <span className="logo-text">Shobha Chawla</span>
               <button className="close-btn" onClick={() => setMobileMenuOpen(false)}>&times;</button>
             </div>
             <nav className="mobile-nav-links">
