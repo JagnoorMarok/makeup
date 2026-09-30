@@ -25,7 +25,7 @@ export default function Hero({ onOpenConsultModal }) {
         {/* Background Image of Luxury Model in Red Hat */}
         <div className="hero-bg-container">
           <img 
-            src="/images/hero_woman.jpg" 
+            src="/images/hero_woman_custom.jpg" 
             alt="Zerra Luxury Beauty Radiance" 
             className="hero-backdrop-img"
             loading="eager"
