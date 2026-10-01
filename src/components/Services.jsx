@@ -79,7 +79,7 @@ export default function Services({ onSelectService, onOpenConsultModal }) {
           <div className="featured-floating-pill">
             <div className="pill-text-content">
               <h3 className="pill-service-title">Bright Makeup</h3>
-              <span className="pill-service-subtitle">EXPERT PRO • FROM $135</span>
+              <span className="pill-service-subtitle">EXPERT PRO • FROM ₹11,000</span>
             </div>
             <div className="pill-arrow-divider" />
             <div className="pill-arrow-wrap">

@@ -35,13 +35,13 @@ export default function ConsultModal({ isOpen, initialServiceId, onClose, onConf
           <div className="form-group">
             <label htmlFor="serviceSelect">Select Luxury Service</label>
             <select id="serviceSelect" value={service} onChange={(e) => setService(e.target.value)} required>
-              <option value="bright-makeup">Bright Makeup (From $135) — 75 min</option>
-              <option value="design-manicure">Design Manicure (From $30) — 45 min</option>
-              <option value="treatments-spa">Treatments & Spa (From $70) — 60 min</option>
-              <option value="brow-shaping">Brow Shaping & Tint (From $45) — 30 min</option>
-              <option value="hair-treatments">Luminous Hair Ritual (From $100) — 90 min</option>
-              <option value="glow-facial">Hydra-Radiance Facial (From $110) — 60 min</option>
-              <option value="head-spa">Japanese Head Spa (From $95) — 60 min</option>
+              <option value="bright-makeup">Bright Makeup (From ₹11,000) — 75 min</option>
+              <option value="design-manicure">Design Manicure (From ₹2,500) — 45 min</option>
+              <option value="treatments-spa">Treatments & Spa (From ₹5,500) — 60 min</option>
+              <option value="brow-shaping">Brow Shaping & Tint (From ₹3,500) — 30 min</option>
+              <option value="hair-treatments">Luminous Hair Ritual (From ₹8,000) — 90 min</option>
+              <option value="glow-facial">Hydra-Radiance Facial (From ₹9,000) — 60 min</option>
+              <option value="head-spa">Japanese Head Spa (From ₹7,500) — 60 min</option>
               <option value="custom-package">Customized Day of Indulgence Package</option>
             </select>
           </div>

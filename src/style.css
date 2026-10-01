@@ -793,40 +793,6 @@ body {
   white-space: nowrap;
 }
 
-@media (max-width: 1100px) {
-  .wrap-top-right {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin: 0 0 32px auto;
-  }
-
-  .about-statement-red {
-    font-size: clamp(1.4rem, 4.2vw, 2.8rem);
-  }
-
-  .about-bottom-images-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
-  }
-}
-
-@media (max-width: 640px) {
-  .about-editorial-container {
-    padding: 0 20px;
-  }
-
-  .about-statement-red {
-    font-size: clamp(1.2rem, 5.8vw, 2rem);
-    line-height: 1.25;
-  }
-
-  .editorial-line {
-    white-space: normal;
-  }
-}
-
 /* Bottom Images Row - Placed safely below text content */
 .about-bottom-images-row {
   display: flex;
@@ -891,6 +857,105 @@ body {
   box-shadow: 0 20px 42px rgba(24, 23, 22, 0.12);
   border: 4px solid var(--bg-primary);
   animation: fluidFloatDuoFront 7.8s ease-in-out infinite 0.3s;
+}
+
+@media (max-width: 1100px) {
+  .wrap-top-right {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 0 0 32px auto;
+  }
+
+  .about-statement-red {
+    font-size: clamp(1.4rem, 4.2vw, 2.8rem);
+  }
+
+  .about-bottom-images-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-editorial-section {
+    padding: 70px 0 50px;
+    overflow: hidden;
+  }
+
+  .about-editorial-container {
+    padding: 0 20px;
+  }
+
+  .about-kicker-red {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 20px;
+  }
+
+  .about-statement-red {
+    font-size: clamp(1.35rem, 5.5vw, 2.1rem);
+    line-height: 1.25;
+    margin-bottom: 28px;
+  }
+
+  .editorial-line {
+    white-space: normal;
+    display: inline;
+  }
+
+  .wrap-top-right {
+    position: relative;
+    margin: 0 auto 28px;
+    float: none;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .img-top-right {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .about-bottom-images-row {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  .wrap-bottom-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .img-bottom-left {
+    width: 100%;
+    max-width: 320px;
+    height: 210px;
+  }
+
+  .editorial-duo-cluster {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+    margin: 0 auto;
+  }
+
+  .img-duo-back {
+    width: 62%;
+    height: 170px;
+  }
+
+  .img-duo-front {
+    width: 58%;
+    height: 160px;
+  }
 }
 
 /* ==========================================================================
@@ -2334,85 +2399,583 @@ body {
 }
 
 @media (max-width: 768px) {
+  /* Prevent horizontal bleed */
+  body, html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  /* Header & Navigation */
   .desktop-navigation,
-  .btn-consult-pill {
+  .btn-consult-pill:not(.full-width) {
     display: none;
   }
 
   .mobile-menu-btn {
     display: flex;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-sm);
   }
 
   .logo-text {
-    font-size: 1.45rem;
+    font-size: clamp(1.25rem, 5vw, 1.45rem);
   }
 
   .header-container {
-    padding: 0 20px;
+    padding: 0 16px;
+    min-height: 60px;
   }
 
+  .mobile-drawer-body {
+    width: 85%;
+    max-width: 320px;
+    padding: 28px 20px;
+    overflow-y: auto;
+  }
+
+  .mobile-nav-links a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 1.15rem;
+    padding: 6px 0;
+  }
+
+  /* Hero Section */
   .hero-viewport {
-    padding: 0 12px 40px;
+    padding: 0 12px 32px;
   }
 
   .hero-card-frame {
-    border-radius: var(--radius-lg);
-    min-height: 80vh;
+    border-radius: 20px;
+    min-height: 82vh;
+    max-height: 750px;
+  }
+
+  .hero-backdrop-img {
+    object-position: center 20%;
+    transform: scale(1.15);
+  }
+
+  .hero-marquee-wrapper {
+    top: 28%;
+  }
+
+  .marquee-text {
+    font-size: clamp(3rem, 11vw, 4.5rem);
   }
 
   .hero-bottom-grid {
-    padding: 0 20px 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px 24px;
+    gap: 20px;
+  }
+
+  .hero-statement-col {
+    max-width: 100%;
+  }
+
+  .hero-welcome-tag {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+  }
+
+  .hero-welcome-body {
+    font-size: 0.88rem;
+    line-height: 1.5;
+  }
+
+  .hero-pills-col {
+    width: 100%;
+    align-items: stretch;
+    gap: 8px;
   }
 
   .pills-row {
+    display: flex;
     flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
   }
 
-  .service-card-row {
+  .hero-badge-pill {
+    flex: 1 1 calc(50% - 6px);
+    min-height: 42px;
+    padding: 8px 10px;
+    font-size: 0.72rem;
+    text-align: center;
+    justify-content: center;
+    border-radius: 999px;
+  }
+
+  /* Services Section */
+  .services-editorial-section {
+    padding: 60px 0 70px;
+  }
+
+  .services-editorial-container {
+    padding: 0 16px;
+  }
+
+  .services-title-bar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    gap: 12px;
+    margin-bottom: 20px;
   }
 
-  .service-right-group {
+  .services-main-heading {
+    font-size: clamp(1.8rem, 6.8vw, 2.6rem);
+  }
+
+  .services-featured-card {
+    height: clamp(300px, 58vw, 400px);
+    border-radius: 14px;
+  }
+
+  .featured-floating-pill {
+    bottom: 12px;
+    right: 12px;
+    left: 12px;
+    border-radius: 8px;
+  }
+
+  .pill-text-content {
+    padding: 12px 14px;
+  }
+
+  .pill-service-title {
+    font-size: 1.25rem;
+  }
+
+  .pill-service-subtitle {
+    font-size: 0.68rem;
+  }
+
+  .pill-arrow-wrap {
+    padding: 0 12px;
+  }
+
+  .services-filter-nav {
+    margin: 28px 0 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+
+  .services-filter-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tabs-group {
+    flex-wrap: nowrap;
+    gap: 16px;
+    white-space: nowrap;
+  }
+
+  .filter-tab-item,
+  .filter-btn-popular {
+    font-size: 0.75rem;
+    padding: 6px 0;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .service-editorial-row-item {
+    padding: 20px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .service-editorial-name {
+    font-size: clamp(1.4rem, 5.5vw, 1.85rem);
+    line-height: 1.2;
+  }
+
+  .service-editorial-meta-group {
     width: 100%;
     justify-content: space-between;
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid var(--border-card);
+    gap: 12px;
+  }
+
+  .service-editorial-specialist {
+    font-size: 0.78rem;
+  }
+
+  .service-editorial-price-badge {
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .service-editorial-arrow {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  /* Quote Section */
+  .quote-editorial-section {
+    padding: 70px 0 80px;
+    overflow: hidden;
+  }
+
+  .quote-editorial-container {
+    padding: 0 16px;
+    min-height: auto;
+  }
+
+  .quote-emblem-wrap {
+    margin-bottom: 20px;
+  }
+
+  .quote-emblem-icon {
+    width: 44px;
+  }
+
+  .founder-quote-editorial {
+    font-size: clamp(1.55rem, 6.2vw, 2.2rem);
+    line-height: 1.28;
+    margin-bottom: 24px;
+  }
+
+  .quote-editorial-line {
+    white-space: normal;
+    display: inline;
+  }
+
+  .quote-attribution-row {
+    font-size: 0.88rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .quote-tilted-card {
+    display: none;
+  }
+
+  /* Testimonials Section */
+  .feedback-section {
+    padding: 60px 0 70px;
+  }
+
+  .feedback-header {
+    margin-bottom: 28px;
+    gap: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-tag {
+    font-size: 0.72rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 6.8vw, 2.4rem);
+    line-height: 1.2;
+  }
+
+  .slider-controls {
+    align-self: flex-end;
+  }
+
+  .slider-nav-btn {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
   }
 
   .feedback-card {
     flex: 0 0 100%;
+    min-width: 0;
+    width: 100%;
+    padding: 24px 18px;
+    border-radius: 16px;
   }
 
-  .insta-gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .feedback-quote {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
-  .footer-top-grid {
-    grid-template-columns: 1fr;
+  /* Instagram / Gallery Section */
+  .follow-gallery-section {
+    padding: 50px 0 0;
   }
 
-  .footer-col-newsletter {
-    grid-column: span 1;
+  .follow-gallery-top {
+    padding: 0 16px 24px;
   }
 
-  .cta-phone-links {
+  .brush-smear-wrapper {
+    display: none;
+  }
+
+  .follow-header-container {
     flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .follow-us-tag {
+    font-size: 11px;
+  }
+
+  .follow-links-nav {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .follow-social-link {
+    font-size: clamp(1.7rem, 6.8vw, 2.4rem);
+  }
+
+  .follow-gallery-ribbon-wrap {
+    padding: 0 12px;
+  }
+
+  .follow-gallery-ribbon {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery-card-item {
+    height: clamp(150px, 46vw, 200px);
+    border-radius: 8px;
+  }
+
+  /* Footer Section */
+  .brand-footer-section,
+  .zerra-footer-section {
+    padding: 54px 0 0;
+  }
+
+  .footer-header-container {
+    padding: 0 16px 32px;
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-journey-heading {
+    font-size: clamp(1.6rem, 6.2vw, 2.2rem);
+    line-height: 1.22;
+  }
+
+  .heading-line {
+    white-space: normal;
+    display: inline;
+  }
+
+  .footer-journey-subtext {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .footer-contact-phones {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
     width: 100%;
   }
 
-  .cta-phone-pill {
-    width: 100%;
+  .footer-phone-num {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    text-align: center;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+  }
+
+  .phone-divider-pipe {
+    display: none;
+  }
+
+  .footer-cream-card-wrap {
+    padding: 0 10px;
+  }
+
+  .footer-cream-card {
+    padding: 28px 16px 40px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    gap: 32px;
+  }
+
+  .cream-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .studio-location-entry {
+    margin-bottom: 20px;
+  }
+
+  .studio-name {
+    font-size: 1.05rem;
+  }
+
+  .studio-address-text a {
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  .action-pill-buttons-group {
+    gap: 10px;
+  }
+
+  .action-pill-card-btn {
+    min-height: 52px;
+    padding: 12px 14px;
+  }
+
+  .pill-btn-label {
+    font-size: 11.5px;
+  }
+
+  .pill-arrow-circle {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Modals */
+  .modal-backdrop {
+    padding: 12px;
+  }
+
+  .modal-card {
+    padding: 24px 18px;
+    max-height: 86vh;
+    border-radius: 18px;
+    width: 100%;
+  }
+
+  .modal-close-btn {
+    top: 14px;
+    right: 14px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .modal-title {
+    font-size: 1.55rem;
+  }
+
+  .modal-desc {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
   }
 
   .form-row-2 {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
-  .modal-card {
-    padding: 24px;
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    min-height: 44px;
+    font-size: 16px;
+    padding: 10px 12px;
+  }
+
+  .btn-submit-booking {
+    min-height: 48px;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  /* Quick View Modal */
+  .quickview-card {
+    max-height: 88vh;
+  }
+
+  .quickview-body {
+    grid-template-columns: 1fr;
+  }
+
+  .quickview-image-frame {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .quickview-details {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+
+  .quickview-title {
+    font-size: 1.45rem;
+  }
+
+  .quickview-desc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Extra Compact Phones (iPhone SE, 360px-390px) */
+@media (max-width: 420px) {
+  .hero-viewport {
+    padding: 0 8px 24px;
+  }
+
+  .hero-card-frame {
+    border-radius: 16px;
+    min-height: 84vh;
+  }
+
+  .hero-bottom-grid {
+    padding: 0 12px 18px;
+  }
+
+  .hero-badge-pill {
+    font-size: 0.67rem;
+    padding: 7px 6px;
+    min-height: 38px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-cream-card-wrap {
+    padding: 0 6px;
+  }
+
+  .footer-cream-card {
+    padding: 22px 12px 32px;
+  }
+
+  .action-pill-card-btn {
+    padding: 10px 12px;
+  }
+
+  .pill-btn-label {
+    font-size: 10.5px;
   }
 }
